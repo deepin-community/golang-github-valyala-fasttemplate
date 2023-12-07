@@ -1,5 +1,82 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-valyala-fasttemplate (1.2.2+ds1-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version 1.2.2.
+  * Fix typo in Files-Excluded field name.
+  * Switch to Standards-Version 4.6.1 (no changes needed).
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Guillem Jover <gjover@sipwise.com>  Fri, 04 Nov 2022 18:48:17 +0100
+
+golang-github-valyala-fasttemplate (1.2.1+ds1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Repackage upstream tarball to remove vendored dependencies.
+  * Update gitignore entries.
+  * Decapitalize synopsis first word.
+  * Exclude the vendor directory in debian/copyright.
+  * Remove redundant copyright and license name information from License
+    field.
+  * Use dh-sequence-golang instead of dh-golang and --with=golang.
+  * Wrap and sort -sat.
+  * Remove unused ${shlibs:Depends} from dependency.
+  * Switch to Standards-Version 4.6.0 (no changes needed).
+  * Update copyright information.
+  * Update debian/watch file.
+  * Update gitlab-ci.yml from its new refactored template.
+  * Remove vendored dependencies.
+
+ -- Guillem Jover <gjover@sipwise.com>  Fri, 03 Dec 2021 17:27:23 +0100
+
+golang-github-valyala-fasttemplate (1.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Guillem Jover ]
+  * New upstream version 1.2.1.
+  * Switch to Standards-Version to 4.5.1 (no change needed).
+  * Update gitlab-ci.yml from latest template.
+  * Set build directory to _build.
+  * Stop using pristine-tar.
+  * Switch to debhelper-compat 13.
+  * Set Section to golang.
+  * Mark -dev package as Multi-Arch:foreign.
+  * Remove redundant line in Description replicating the Synopsis.
+
+ -- Guillem Jover <gjover@sipwise.com>  Fri, 22 Jan 2021 19:20:39 +0100
+
+golang-github-valyala-fasttemplate (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * Apply "cme fix dpkg" fixes:
+    - Update debhelper dependency to "Build-Depends: debhelper-compat (= 12)"
+    - Bump Standards-Version to 4.4.1 (no change)
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Update debian/watch to use filenamemangle
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Add myself to the list of Uploaders
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+
+ -- Anthony Fok <foka@debian.org>  Mon, 02 Dec 2019 22:37:58 -0700
+
+golang-github-valyala-fasttemplate (0.0~git20170224.0.dcecefd+dfsg-3) unstable; urgency=medium
+
+  * Point Vcs-* urls to salsa.d.o subproject.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Thu, 01 Mar 2018 12:51:15 +0900
+
+golang-github-valyala-fasttemplate (0.0~git20170224.0.dcecefd+dfsg-2) unstable; urgency=medium
+
+  * Change Section from golang to devel.
+    The golang section is not yet defined.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 06 Feb 2018 07:13:35 +0900
+
+golang-github-valyala-fasttemplate (0.0~git20170224.0.dcecefd+dfsg-1) unstable; urgency=medium
+
+  * Initial release (Closes: #882962)
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 28 Nov 2017 08:22:37 +0900
